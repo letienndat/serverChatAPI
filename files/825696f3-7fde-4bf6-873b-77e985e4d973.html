@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blur Circle with Shadow Example</title>
+<style>
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    body {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blur-circle {
+        width: 1px;
+        height: 1px;
+        border-radius: 50%; /* Tạo hình tròn */
+        background-color: #4461F2; /* Màu nền của hình tròn */
+        box-shadow: 0 0 90px 90px rgba(68, 97, 242, 0.3); /* Tạo shadow với độ mờ và màu tương tự như nền */
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="blur-circle"></div>
+    <div class="content">
+        <h1>This is blurred content</h1>
+    </div>
+</body>
+</html>
