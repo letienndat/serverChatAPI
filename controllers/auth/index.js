@@ -3,7 +3,7 @@ var router = express.Router()
 var mongoose = require('mongoose')
 var models = reqlib('database').models
 var moment = require('moment')
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { generateToken } = require('../../utils/jwtUtils')
 const saltRounds = 10;
 
