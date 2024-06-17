@@ -5,10 +5,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser')
 var cors = require('cors')
 const multer = require('multer');
+const morgan = require("morgan");
 
 var app = express();
 const port = process.env.PORT || 3000;
 
+app.use(morgan("combined"));
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
