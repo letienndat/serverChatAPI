@@ -4,8 +4,8 @@ mongoose.Promise = require("bluebird");
 
 const option = {
   socketTimeoutMS: 30000,
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true,
   tls: true,
   tlsAllowInvalidCertificates: true,
 };
