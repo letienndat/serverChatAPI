@@ -17,7 +17,7 @@ const savePathImage = `${parentDirectory}/images`;
 const savePathFile = `${parentDirectory}/files`;
 
 const { WebSocketServer } = require("ws");
-const sockserver = new WebSocketServer({ port: 8080 });
+const sockserver = new WebSocketServer({ port: 9090 });
 const channels = new Map();
 
 sockserver.on("connection", (ws) => {
